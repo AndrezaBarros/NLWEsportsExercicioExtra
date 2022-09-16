@@ -4,7 +4,7 @@
 
 > Trilha Explorer - Exercício Extra
 
-Exercício extra proposto no evento Next Level Week da Rockeseat.
+Exercício extra proposto no evento Next Level Week da Rocketseat.
 
 [🔗 Clique aqui para acessar](https://andrezabarros.github.io/NLWEsportsExercicioExtra/)
 
