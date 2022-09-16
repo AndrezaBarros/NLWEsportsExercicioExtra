@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    background-color: #121214;
+}
+
+body *{
+    font-family: 'Montserrat', sans-serif;   
+}
+
+header{
+    padding-top: 32px;
+    height: 152px;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    display: flex;
+
+    padding: 4px;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%; 
+
+    transition: transform .4s;
+    animation: toLeftRigth .5s;
+}
+
+
+header div img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+    gap: 24px;
+}
+
+section{
+    display: flex;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 8px;
+
+}
+
+section div{
+    padding: 32px;
+    padding-top: 24px;
+    width: 520px;
+
+    background-color: #262629;
+    border-radius: 8px;
+}
+
+section h1{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+section p{
+    color: #C1C1C1;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+section div ul{
+    display: flex;
+    margin-top: 24px;
+    gap: 16px;
+
+    list-style: none;
+    
+    transition: transform .5s;
+}
+
+.animations-list img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.animes-list img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.books-list img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.contact img {
+    width: 30px;
+}
+
+/*Transições*/
+
+header div:hover{
+    transform: scale(1.1)
+}
+
+section div ul li:hover{
+    transform: scale(1.1);
+}
+
+/*Animações*/
+
+@keyframes toLeftRigth {
+    from{
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes toRigthLeft {
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main section:nth-child(1){
+    animation: toRigthLeft .5s;
+}
+
+main section:nth-child(2){
+    animation: toRigthLeft 1s;
+}
+
+main section:nth-child(3){
+    animation: toRigthLeft 1.5s;
+}
+
+main section:nth-child(4){
+    animation: toRigthLeft 2s;
+}
